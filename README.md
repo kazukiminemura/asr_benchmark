@@ -3,6 +3,13 @@
 CLI benchmark for microphone ASR inference with Whisper OpenVINO IR models from
 the OpenVINO Speech-to-Text collection on Hugging Face.
 
+## Benchmark Summary
+
+![ASR benchmark summary](reports/asr_benchmark_summary_2026-05-31.png)
+
+Detailed results are in
+[`reports/asr_model_evaluation_2026-05-31.md`](reports/asr_model_evaluation_2026-05-31.md).
+
 ## Setup
 
 ```powershell
