@@ -1,0 +1,26 @@
+[project]
+name = "asr-benchmark"
+version = "0.1.0"
+description = "CLI benchmark for microphone ASR inference with Whisper OpenVINO IR models."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "openvino>=2024.0",
+    "optimum-intel[openvino]>=1.20.0",
+    "rich>=13.7",
+    "sounddevice>=0.4.6",
+    "torch>=2.1",
+    "transformers>=4.40",
+    "typer>=0.12",
+]
+
+[project.scripts]
+asr-bench = "asr_benchmark.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/asr_benchmark"]
